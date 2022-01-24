@@ -28,8 +28,7 @@ export default function App() {
     // ФИАС https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/oktmo
     // ФИО https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/fio
     
-    const url =
-      'https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address';
+    const url = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address';
     const options = {
       method: 'POST',
       mode: 'cors',
@@ -75,7 +74,9 @@ export default function App() {
             });
           }}
         />
-        <pre>{JSON.stringify(state, null, 2)}</pre>
+        <pre>
+          { JSON.stringify(state, null, 2) }
+        </pre>
       </>
     </div>
   );
