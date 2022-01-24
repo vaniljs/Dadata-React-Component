@@ -60,7 +60,6 @@ export default function App() {
   }, [state.query]);
 
   return (
-    <div>
       <>
         <input
           type="text"
@@ -78,6 +77,5 @@ export default function App() {
           { JSON.stringify(state, null, 2) }
         </pre>
       </>
-    </div>
   );
 }
